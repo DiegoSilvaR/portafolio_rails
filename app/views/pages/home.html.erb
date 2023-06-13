@@ -1,16 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<div class="card mb-3">
-  <div class="row">
-    <div class="col-lg-4">
-    <%= image_tag 'ruby.png', class:"profile-img" %>
+ <!--CARRUSEL RESPONSIVO SLIDE AUTOMATICO=======================================================================-->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'carrusel1', class:"d-block w-100" %>
     </div>
-    <div class="col-lg-6">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
+    <div class="carousel-item ">
+        <%= image_tag 'carrusel2', class:"d-block w-100" %>
+    </div>
+    <div class="carousel-item ">
+        <%= image_tag 'carrusel3', class:"d-block w-100" %>
     </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+    <!--==============================================================================================================-->

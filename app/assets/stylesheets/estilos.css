@@ -7,3 +7,256 @@
     margin-right: 5%;
     margin-left: 2%;
 }
+
+
+*body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(20, 20, 20);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.navbar{
+    background-color: #0dcaf0;
+}
+.navbar a{
+    font-size: 23px;
+    margin-inline: 7px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+#viaje{
+    font-size: 26px;
+    font-weight: 500;
+}
+#quienessomos{
+    padding-top: 4%;
+}
+#quienessomos hr{
+    height: 4px;
+    background-color:#525252;
+    margin-bottom: 3%;
+}
+#quienes{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 500;
+    font-size: 45px;
+}
+#quienessomos p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+#destacado{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 500;
+    font-size: 45px;
+}
+#destacados{
+  padding-top: 5%;
+  padding-bottom: 6%;
+}
+#destacados .card{
+    min-width: 270px;
+
+  }
+#destacados hr{
+    height: 4px;
+    background-color:#525252;
+    margin-bottom: 3%;
+}
+#destacados img{
+    height: 280px;
+    margin-bottom: 2%;
+}
+#destacados p{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+#destacados h3{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 500;
+    font-size: 30px;
+}
+#contactos {
+ padding-top: 0%;
+ padding-bottom: 1%;
+}
+
+#contactos hr{
+    height: 4px;
+    background-color:#525252;
+    margin-bottom: 3%;
+}
+#contactos label{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 300;
+    font-size: 18px;
+}
+#contacto{
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    font-weight: 500;
+    font-size: 45px;
+}
+#footer{
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+
+}
+#footer h2{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 12px;
+}
+#footer a{
+   text-decoration: none;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-secondary);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+
+  }
+  button:hover {
+    background:#d51869 !important;
+    }
+
+.carousel-control-prev:hover{
+    background-color: #ffffff00 !important;
+
+}
+.carousel-control-next:hover{
+    background-color: #ffffff00 !important;
+}
+
+.glow-on-hover {
+
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #0dcaf0;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #00ff91, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff006f);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0dcaf072;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #d51869;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.nav-link:hover{
+    color: #ff529d !important;
+    font-weight: 700;
+
+}
+
+.fa-brands:hover{
+color: #d51869 !important;
+}
+.fa-solid:hover{
+    color: #d51869 !important;
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar{
+        background-color: #00000000;
+    }
+}
