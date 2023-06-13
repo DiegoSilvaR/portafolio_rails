@@ -1,0 +1,35 @@
+<!--CONTACTO SECTION BOTON ENVIAR EFECTO GLOW CSS CON ALERTA DE ENVIO================================================-->
+    <section id="contactos" class="col-lg-11 container-fluid justify-content-center text-start">
+      <h1 id="contacto" class="pt-5 pb-3 text-center">CONTACTO</h1>
+      <hr>
+      <form class="was-validated">
+      <div class="mb-3 mx-3 text-start">
+        <label for="validation01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="validation01" placeholder="Requiere Nombre" required>
+         <div class="invalid-feedback">
+          Porfavor Ingresa Nombre.
+        </div>
+      </div>
+      <div class="mb-3 mx-3 text-start">
+        <label for="validation02" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="validation02" placeholder="Requiere Asunto" required>
+        <div class="invalid-feedback">
+          Porfavor Ingresa Asunto.
+        </div>
+      </div>
+      <div class="mb-3 mx-3 text-start">
+        <label for="validation03" class="form-label">Mensaje</label>
+        <textarea class="form-control"  id="validation03" placeholder="Requiere un Mensaje" required
+          rows="5"></textarea>
+          <div class="invalid-feedback">
+            Porfavor Ingresa un mensaje.
+          </div>
+      </div>
+      <div class="col col-md-4 col-lg-3 col-xl-2 mx-3">
+        <button type="submit" id="btn" class=" btn btn-info btn-lg text-light form-control glow-on-hover pulse"
+          data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip"
+          data-bs-title="Presiona para enviar tu Mensaje." disabled>Enviar</button>
+      </div>
+    </form>
+    </section>
+    <!--=====================================================================================================-->
